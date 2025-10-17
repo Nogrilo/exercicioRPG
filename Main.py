@@ -1,11 +1,11 @@
-from ArmaduraCouro  import ArmaduraCouro
-from ArmaduraMalha  import ArmaduraMalha
-from Personagem     import Personagem
+from ArmaduraCouro          import ArmaduraCouro
+from ArmaduraMalha          import ArmaduraMalha
+from Personagem             import Personagem
+from PersonagemCavaleiro    import PersonagemCavaleiro
 
-def definirPersonagem():
-    armaduraFraca   = ArmaduraCouro()
-    personagem01    = Personagem(10, 5, "Piteus", 10, 4, "Cavaleiro", armaduraFraca)
-    personagem01.exibirDadosPersonagem()
+armaduraMalha = ArmaduraMalha()
+armaduraCouro = ArmaduraCouro()
 
-if __name__ == "__main__":
-    definirPersonagem()
+personagem01 = PersonagemCavaleiro("Nogrilo", armaduraCouro)
+personagem01.exibirDadosPersonagem()
+
